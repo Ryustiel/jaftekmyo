@@ -1,0 +1,98 @@
+@startuml
+
+
+object Surprise {
+    des (étonnement suite à une découverte)
+}
+
+object Crainte {
+    nei (fuite sociale)
+    tsu (peur que ça perde son intégrité)
+}
+
+object Dégoût {
+    swb (dégoût + débaras)
+}
+
+object Enèrvement {
+    fsu (perdre son temps)
+}
+
+object Activité {
+    saa (confiance d'anticipation)
+}
+
+object Flow { 
+    qaj (remplacer un truc qu'on pensait savoir)
+    aisi (immergé dans la musique)
+}
+
+object Collectif {
+    seim (appartenance à groupe ville)
+}
+
+object Immersifs {
+    nukse (détente sensation physique chaleureuse)
+    tas (regard de paysage)
+    jubn (se sentir à la maison)
+    tsi (se reposer contre une surface chaude, être lent)
+}
+
+object Contrainte {
+    daat (attendre la fin d'un événement)
+    btfu (attendre quelqu'un ou quelque chose)
+    [NEW] tbi (répétitif)
+}
+
+object Gêne {
+    eli (être trempé tout habillé)
+}
+
+object Motivations {
+    sei (envie de discuter)
+    hat (vouloir se montrer à un publique)
+    dan (promouvoir le traitement similaire)
+}
+
+object Fierté {
+    den (état particulier stable atteint)
+}
+
+object Projection {
+    qispe (laisser une marque pour futurs)
+}
+
+object Pression {
+
+}
+
+object Respect {
+    mlaal (gratitude pour service rendu)
+}
+
+
+' relations
+
+Motivations -- Contrainte
+Contrainte -- Crainte
+
+Dégoût -- Enèrvement
+Dégoût -- Motivations
+Enèrvement -- Motivations
+Dégoût -- Crainte
+Crainte -- Motivations
+
+Fierté -- Motivations
+Activité -- Motivations
+Flow -- Activité
+Collectif -- Flow
+
+Surprise -- Immersifs
+
+Gêne -- Immersifs
+Gêne -- Dégoût
+
+Projection -- Crainte
+Projection -- Motivations
+
+@enduml

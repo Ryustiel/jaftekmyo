@@ -1,0 +1,105 @@
+@startuml
+
+object Espace {
+    teo (espace couvert, délimité physiquement)
+    tei (espace délimité par démonstration)
+    tao (espace délimité administrativement ou environnementalement)
+}
+
+object Evénements {
+    min (activité)
+}
+
+object Analyse {
+    kju (manière de faire)
+    tu (posture, position, configuration)
+    fjp (résultat d'un processus d'observation de l'objet)
+}
+
+object Manipulables {
+    sb (objet saisissable dans la main, déplaçable)
+    [NEW] dp (saisissable mais encombrant (cartons))
+}
+
+object Utilisés {
+    np (mobilier, pour aménagements humains : poser, supporter des éléments)
+    ko (objet conteneur qu'on considère pour sa capacité à contenir)
+    tc (véhicule)
+}
+
+object Indénombrables {
+    lp (surfaces)
+    fin (tissages, aggrégats de fibre)
+}
+
+object Intéractibles {
+    na (personne)
+    til (animal d'environnement) : til et la plante...
+    (plante = classe de lampadaire jusqu'à ce que
+    les gens pense que c'est vivant, puis que c'est pensant)
+}
+
+object Consommables {
+    ga (nourriture grasse)
+    scy (nourriture riche en vitamines)
+    slui (boissons)
+}
+
+object Langage {
+    so (compréhension de quelque chose)
+    tek (symbole)
+}
+
+object Perception {
+    ki (image de quelque chose)
+    sai (son de quelque chose)
+    sbm (sensation physique)
+    lam (état d'esprit)
+}
+
+' potentiels
+
+' ne jamais les faire se terminer par f
+' éviter au maximum les fins en s, en h, et en w
+' donc maximiser les voyelles nues, et les consonnes
+' l, q et n
+' préférer le mono syllabique
+' les doubles voyelles sont tout à fait acceptables
+' car les mots couleur ne prennent pas de marques
+
+object POTENTIELS {
+    sbi
+    daj
+    dai
+    swa
+    sua
+    nua
+    nub
+    njo
+    njb
+    njuq
+    swaq
+    am (classe)
+}
+
+
+' relations
+
+Indénombrables -- Manipulables
+Intéractibles -- Manipulables
+Consommables -- Manipulables
+Consommables -- Intéractibles
+
+Langage -- Perception
+Langage -- Intéractibles
+Perception -- Intéractibles
+
+Espace -- Indénombrables
+Espace -- Utilisés
+Utilisés -- Indénombrables
+
+Evénements -- Analyse
+
+
+
+@enduml
